@@ -53,6 +53,36 @@ nav a:hover {
     color: #ffcc00;
 }
 
+/* Hamburger Menu for Small Screens */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #004d99;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 .hero {
     position: relative;
     height: 100vh; /* Full height of the viewport */

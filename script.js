@@ -1,17 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('nav a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', smoothScroll);
-    });
-});
+const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-function smoothScroll(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
-    
-    targetSection.scrollIntoView({
-        behavior: 'smooth'
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
-}
