@@ -54,13 +54,42 @@ nav a:hover {
     color: #ffcc00;
 }
 
+.nav-links {
+    flex-direction: column;
+    background-color: #004d99;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none; /* Hidden by default */
+    text-align: center;
+}
+
+.nav-links.active {
+    display: flex;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
 /* Hamburger Menu for Small Screens */
 .hamburger {
-    display: none;
-    font-size: 1.8rem;
-    color: white;
+    display: block;
+    font-size: 2rem;
     cursor: pointer;
-    z-index: 20;
+    margin-right: 15px;
 }
 
 /* Responsive Styles */
@@ -174,3 +203,32 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about, .events, .committees, .contact {
+        padding: 20px 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
