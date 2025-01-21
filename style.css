@@ -427,6 +427,7 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 40px;
 }
 
 .back-button:hover {
