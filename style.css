@@ -114,6 +114,14 @@ nav a:hover {
     .hamburger {
         display: block;
     }
+
+    div.scroll-container img {
+        padding: 5px;
+        max-width: 100%; /* Ensures images adjust to smaller screen widths */
+        height: auto;
+      }
+
+
 }
 
 .hero {
@@ -399,6 +407,23 @@ nav a:hover {
 .back-button:hover {
     background-color: #a00000;
 }
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  /* Images inside the scroll container */
+div.scroll-container img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain; /* Ensures the image fits within the container */
+  }
+
 
 footer {
     text-align: center;
