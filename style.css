@@ -531,8 +531,8 @@ background-size: cover;
     justify-content: space-between; /* Adds space between columns */
     align-items: flex-start; /* Aligns items to the top of the row */
     gap: 20px; /* Adds spacing between boxes */
-    margin-top: 30px; /* Adds spacing above the columns */
-    margin-bottom: 170px;
+    margin-top: 70px; /* Adds spacing above the columns */
+    margin-bottom: 200px;
 }
 
 .contact-column {
