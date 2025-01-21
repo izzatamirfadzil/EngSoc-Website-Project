@@ -11,3 +11,12 @@ hamburger.addEventListener("click", () => {
         hero.style.marginTop = "0"; // Reset margin
     }
 });
+
+// Enable smooth scrolling for the "Learn More" button
+document.querySelector('.cta-button').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    document.querySelector('#info-section').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+    });
+});
