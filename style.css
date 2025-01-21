@@ -67,12 +67,15 @@ nav a:hover {
 .nav-links li a:hover {
     color: #ffcc00;
 }
-/* Hamburger Menu for Small Screens */
+/* Hamburger Icon */
 .hamburger {
-    display: none;
-    font-size: 1.8rem;
+    position: absolute;
+    top: 1%;
+    right: 10px;  /* Adjust this value to move slightly to the left */
+    font-size: 2rem;
     color: white;
     cursor: pointer;
+    z-index: 10;
 }
 
 /* Responsive Styles */
@@ -113,6 +116,15 @@ nav a:hover {
 
     .hamburger {
         display: block;
+    }
+
+    .about-image {
+        padding: 5px;
+    }
+    
+    .about-image img {
+        max-width: 100%;  /* Ensure image takes full width */
+        height: auto;      /* Maintain aspect ratio */
     }
 
     div.scroll-container img {
@@ -279,19 +291,17 @@ nav a:hover {
 }
 
 .about-image {
-    flex: 1; /* Take equal space */
-    max-width: 600px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Maximum width to prevent oversized images */
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Rounded corners for the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+    width: 100%;  /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;  /* Optional - rounded corners */
 }
 
 /* Events Section */
