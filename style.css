@@ -69,7 +69,8 @@ nav a:hover {
 }
 /* Hamburger Icon */
 .hamburger {
-    position: absolute;
+    display:none;
+    position:relative;
     top: 1%;
     right: 10px;  /* Adjust this value to move slightly to the left */
     font-size: 2rem;
