@@ -77,6 +77,24 @@ nav a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+    .hero {
+        height: 50vh; /* Reduce height for better content fit on smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em; /* Adjust text size for small screens */
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -99,10 +117,17 @@ nav a:hover {
 }
 
 .hero {
+    background-image: url("Images/Background.png"); /* Replace with your image path */
+    background-size: cover; /* Ensures the image fills the section */
+    background-position: center; /* Keeps the focus centered */
+    background-repeat: no-repeat; /* Prevents tiling */
     position: relative;
-    height: 100vh; /* Full height of the viewport */
-    overflow: hidden;
-    transition: margin-top 0.3s ease-out;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .hero-background {
