@@ -229,17 +229,61 @@ nav a:hover {
     line-height: 1.4;
 }
 
-.about {
-    padding: 40px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    background: white; /* Use white background for contrast */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Makes it responsive */
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4; /* Light background for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
-.about h2 {
-    color: #004d99;
-    margin-bottom: 15px;
+.about-content {
+    flex: 1; /* Take equal space */
+    padding: 20px;
+    max-width: 600px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #003366; /* Dark blue for the title */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.underline {
+    width: 60px;
+    height: 5px;
+    background-color: #cc0000; /* Red underline */
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    text-align: justify; /* Neat paragraph alignment */
+}
+
+.about-image {
+    flex: 1; /* Take equal space */
+    max-width: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
 }
 
 footer {
