@@ -134,6 +134,8 @@ nav a:hover {
         height: auto;
       }
 
+      
+
 
 }
 
@@ -310,6 +312,7 @@ nav a:hover {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -434,6 +437,33 @@ div.scroll-container img {
     border-radius: 5px;
     object-fit: contain; /* Ensures the image fits within the container */
   }
+
+  /* Committee Section */
+.committee-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.committee-image img {
+    width: 100%; /* Ensures the image spans the entire width */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Crops the image to fill the area */
+}
+
+.committee-content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight white overlay for readability */
+    max-width: 800px;
+    margin-top: 10px; /* Overlaps slightly onto the image */
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
 
 
 footer {
